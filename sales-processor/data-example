@@ -1,0 +1,26 @@
+kafka-console-producer --broker-list localhost:29092 --property "parse.key=true" --property "key.separator=|" --topic
+
+# Salesman
+1|{"id": 1, "name": "Charles"}
+2|{"id": 2, "name": "Sarah"}
+3|{"id": 3, "name": "Peter"}
+4|{"id": 4, "name": "Leonard"}
+5|{"id": 5, "name": "Louise"}
+
+# products
+1|{"id": 1, "name": "iPhone"}
+2|{"id": 1, "name": "XBox"}
+3|{"id": 1, "name": "Nintendo Switch"}
+4|{"id": 6, "name": "iPad"}
+
+# Sales
+{"price": 1000, "product_id": 1, "salesman_id": 1}
+{"price": 2000, "product_id": 1, "salesman_id": 2}
+{"price": 4000, "product_id": 1, "salesman_id": 3}
+{"price": 500, "product_id": 1, "salesman_id": 4}
+{"price": 800, "product_id": 3, "salesman_id": 1}
+{"price": 2500, "product_id": 3, "salesman_id": 2}
+{"price": 9000.0, "product_id": 4, "salesman_id": 3}
+{"price": 1200.0, "product_id": 4, "salesman_id": 4}
+{"price": 500, "product_id": 1, "salesman_id": 5}
+{"price": 90000, "product_id": 4, "salesman_id": 2}
