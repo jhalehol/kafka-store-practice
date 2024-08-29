@@ -1,4 +1,4 @@
-package org.dataart.sales.model;
+package org.dataart.sales.consumer.model;
 
 import lombok.Builder;
 import lombok.Data;

@@ -36,4 +36,5 @@ public class SalesResources {
         return Response.accepted().build();
     }
 
+
 }

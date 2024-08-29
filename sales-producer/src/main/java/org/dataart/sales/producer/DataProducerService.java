@@ -25,14 +25,17 @@ public class DataProducerService {
     private Emitter<SaleEvent> saleEmitter;
 
     public void sendProduct(final Product product) {
+        log.info("Product received {}", product);
         productsEmitter.send(Record.of(product.getId().toString(), product));
     }
 
     public void sendSalesman(final Salesman salesman) {
+        log.info("Salesman received {}", salesman);
         salesmanEmitter.send(Record.of(salesman.getId().toString(), salesman));
     }
 
     public void sendSale(final SaleEvent sale) {
+        log.info("Sale received {}", sale);
         saleEmitter.send(sale);
     }
 }
